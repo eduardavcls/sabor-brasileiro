@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Restaurante Sabor Brasileiro- Peça Online</title>
+</head>
+<body>
+        <header class="header">
+
+    <div id="banner-title">
+         <h1>Sabor
+        Brasileiro</h1>
+    </div> 
+                <nav>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Peça Online</a></li>
+                
+                </ul>
+        </nav>
+        </header>
+
+    <main>
+         <section class="informational-texts">
+        <p>O Restaurante Sabor Brasileiro oferece uma experiência
+        gastronômica única, com pratos que celebram a culinária tradicional
+        brasileira. Visite-nos ou peça online!</p>
+            
+        <div class="Menu">
+         <p>Nossa especialidade inclui Feijoada, Moqueca, Pão de Queijo, e
+        muito mais.</p>
+        </div>
+
+        <div class="request-online">
+            <p>Escolha seus pratos favoritos e faça seu pedido online agora
+            mesmo!</p>
+        </div>
+
+        </section>
+
+        <section class="form">
+            <form class="request-food">
+                <input type="text" placeholder="Nome">
+                <input type="tel" id="telefone" class="input-padrao" required placeholder=" Telefone:(xx) xxxxx-xxxx">
+                <input type="text" placeholder="Endereço">
+
+            </form>
+             
+            <div class="menu">
+                <label for="pratos">Escolha um prato:</label>
+                <select id="pratos" name="pratos">
+                    <option value="feijoada">Feijoada</option>
+                    <option value="moqueca">Moqueca</option>
+                    <option value="picanha">Picanha</option>
+                    <option value="acaraje">Acarajé</option>
+                </select>
+                <div id="info-prato">
+                    <p>Selecione um prato para ver as informações.</p>
+                </div>
+            </div>
+            
+            <script>
+                const pratos = {
+                    feijoada: "Feijoada: Um prato tradicional brasileiro feito com feijão preto e carne de porco.",
+                    moqueca: "Moqueca: Um ensopado de peixe ou frutos do mar com leite de coco e dendê.",
+                    picanha: "Picanha: Um corte de carne bovina muito apreciado no Brasil, geralmente grelhado.",
+                    acaraje: "Acarajé: Bolinho de feijão-fradinho frito no azeite de dendê, recheado com vatapá e camarão."
+                };
+
+                document.getElementById('pratos').addEventListener('change', function () {
+                    const pratoSelecionado = this.value;
+                    document.getElementById('info-prato').innerText = pratos[pratoSelecionado];
+                });
+            </script>
+                    <div class="pay">
+                <input type="radio" id="creditcard" name="payment" value="payment">
+                <label for="creditcard">Cartão</label>
+                <input type="radio" id="money" name="payment" value="payment">
+                <label for="money">Dinheiro</label>
+                <input type="radio" id="pix" name="payment" value="payment">
+                <label for="pix">Pix</label>
+                </div> 
+                <input type="submit" value="Enviar" id="submit">
+        </section>
+         
+    </main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body{
+ color: #E5E5E5;
+ z-index: 2;
+ background-color: #e1d8c3;
+ height: 100%;
+}
+.header {
+height: 450px;
+    background-image: url("../contents/img/restaurante65-1024x683.jpg");
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 8px;
+    justify-content: center;
+}
+
+#banner-title h1{
+   color: rgb(67, 38, 13);
+   font-family: Poppins-Bold;
+   font-size: 80px;
+   background-color:rgb(255, 197, 139);
+   border-radius: 2px;
+font-weight: 200px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+  
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-family: Poppins-Bold;
+    font-size: 30px;
+  
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.3s all;
+    border: 2px solid rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 20px;
+}
+
+.informational-texts p{
+    font-family: Poppins-Medium;
+    color: rgb(0, 0, 0);
+    align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 25px;
+        margin-top: 20px
+
+}
+
+.request-food{
+    display: flex;
+        flex-direction: row;
+         justify-content: center;
+         margin-top: 20px;
+        width: 100%;
+        gap: 20px;
+}
+
+.request-food input{
+    margin-top: 25px;
+        height: 20px;
+        padding: 25px;
+        border-radius: 10px;
+        border: none;
+        font-size: 15px;
+}
+
+.form #submit {
+    display: flex;
+     justify-content: center;
+     margin-left: 35%;
+     width: 30%;
+    height: 50px;
+    background-color: rgb(122, 114, 114);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.menu{
+    
+    align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 25px;
+        font-family:Poppins-Light ;
+        margin-top: 30px
+        
+}
+
+.menu #pratos{
+margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(185, 181, 181);
+    font-family:Poppins-Light ;
+}
+
+#info-prato{
+     padding: 20px;
+    color: black;
+    font-family: Poppins-Light;
+
+}
+
+.menu label{
+    color: rgb(0, 0, 0);
+    font-family: Poppins-Light;
+}
+
+.pay{
+    padding: 60px;
+   margin-left: 30%;
+   display: flex;
+   gap: 6px;
+   flex-direction: column;
+   font-size: 20px;
+  color:black ;
+}
+
+.pay label{
+    font-family:Poppins-Light ;
+    font-size: 25px;
+}
